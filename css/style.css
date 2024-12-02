@@ -1,0 +1,263 @@
+/* Global Variables
+   1- Declare Variables
+   2- Use variables
+   3- Toogling 
+*/
+
+:root {
+   --color-main: #CE1212;
+   --text-main: #212529;
+   --text-main-invert: #FFFFFF;
+   --background-primary: #FFFFFF;
+   --background-accent: #eee;
+}
+
+:root:has(#mode:checked) {
+   --color-main: #C17E1F;
+   --text-main: #FFFFFF;
+   --text-main-invert: #212529;
+   --background-primary: #171717;
+   --background-accent: #252525;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+}
+
+.container {
+   width: 85%;
+   margin: auto;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+nav {
+   position: fixed;
+   top: 0;
+   /* left: 0;
+   right: 0; */
+   z-index: 100;
+   width:100%;
+   background-color: var(--background-primary);
+   color: var(--text-main);
+   font-size: large;
+}
+
+nav .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+nav h1::after {
+   content: ".";
+   color: var(--color-main);
+}
+
+nav .nav-links {
+   padding: 0;
+   margin: 0;
+   display: none;
+   gap: 20px;
+}
+
+nav .nav-links a {
+   color: var(--text-main);
+}
+
+.nav-mode .light {
+   display: none;
+}
+
+.nav-mode:has(#mode:checked) .light {
+   display: block;
+}
+
+.nav-mode:has(#mode:checked) .dark {
+   display: none;
+}
+
+nav .nav-mode i {
+   font-size: 28px;
+   cursor: pointer;
+}
+
+.hero-section {
+   background-color: var(--background-accent);
+}
+
+.hero-section .container {
+   min-height: 100dvh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.hero-text {
+   width: 100%;
+   color: var(--text-main);
+}
+
+.hero-img {
+   width: 100%;
+}
+
+.hero-section .hero-img img {
+   width: 100%;
+}
+
+.hero-btn {
+   margin-top: 40px;
+   display: flex;
+   align-items: center;
+   gap: 50px;
+}
+
+.btn-book {
+   background-color: var(--color-main);
+   padding: 15px 25px;
+   color: var(--text-main-invert);
+   border-radius: 0px 25px 25px 25px;
+}
+
+.btn-video {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: var(--text-main);
+}
+
+.video-icon {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 15px;
+}
+
+.video-icon i {
+   position: relative;
+   z-index: 20;
+}
+
+.btn-video .video-icon::before {
+   content: "";
+   position: absolute;
+   width: 40px;
+   height: 40px;
+   background-color: var(--background-primary);
+   border-radius: 50%;
+   z-index: 10;
+}
+
+.btn-video .video-icon::after {
+   content: "";
+   position: absolute;
+   width: 25px;
+   height: 50px;
+   background-color: var(--color-main);
+   right: 50%;
+   border-radius: 25px 0 0 25px;
+}
+
+.gallery {
+   padding: 50px 0;
+   text-align: center;
+}
+
+.gallery-images {
+   columns:1;
+}
+
+.gallery-img {
+   margin-bottom: 15px;
+   position: relative;
+}
+
+.gallery-img::after{
+   content: "";
+   position: absolute;
+   background-image: url(../Images/team-shape.svg);
+   width: 100%;
+   height: 67px;
+   bottom: 0;
+   left: 0;
+}
+
+.gallery img {
+   width: 100%;
+   display: block;
+}
+
+.contact{
+   padding: 50px 0px;
+}
+
+.contact-title{
+   text-align: center;
+}
+
+.contact-map iframe{
+   width: 100%;
+}
+
+.details{
+   margin: 30px 0;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+
+.details-item{
+   width: 100%;
+   padding: 10px 20px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   background-color: var(--background-accent);
+}
+
+.details-icon{
+   width: 50px;
+   height: 50px;
+   background-color: var(--color-main);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+}
+
+.contact form{
+   background-color: var(--background-accent);
+   padding: 20px;
+   text-align: center;
+}
+
+.contact button{
+   padding: 15px 25px;
+   background-color: var(--color-main);
+   border: none;
+   color: var(--text-main-invert);
+   border-radius: 25px;
+}
+
+.contact input , .contact textarea{
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 20px;
+   border: 1px solid gainsboro;
+}

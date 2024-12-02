@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mealify</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+   <nav>
+      <div class="container">
+         <div class="nav-logo">
+            <h1>Mealify</h1>
+         </div>
+         <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Chefs</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+         </ul>
+         <div class="nav-mode">
+            <label for="mode" class="light">
+               <i class="fa-regular fa-sun"></i>
+            </label>
+            <label for="mode" class="dark">
+               <i class="fa-solid fa-moon"></i>
+            </label>
+            <input type="checkbox" name="mode" id="mode" hidden>
+         </div>
+      </div>
+   </nav>
+
+   <div class="hero-section">
+      <div class="container">
+         <div class="hero-img lg-40">
+            <img src="Images/hero-img.png" alt="">
+         </div>
+         <div class="hero-text lg-40">
+            <h2>
+               Enjoy Your Healthy
+               <br>
+               Delicious Food
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati, dolorum quasi dolores
+               fuga delectus?</p>
+            <div class="hero-btn">
+               <a href="" class="btn-book">Book a Table</a>
+               <a href="" class="btn-video">
+                  <div class="video-icon">
+                     <i class="fa-solid fa-play"></i>
+                  </div>
+                  Watch a Video
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="gallery">
+      <div class="container">
+         <div class="gallery-title">
+            <span>Gallery</span>
+            <h2>Check Our Gallery</h2>
+         </div>
+         <div class="gallery-images">
+            <div class="gallery-img">
+               <img src="Images/meal-1.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+               <img src="Images/meal-4.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+               <img src="Images/meal-2.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+               <img src="Images/meal-7.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+               <img src="Images/meal-3.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+               <img src="Images/meal-5.jpg" alt="">
+            </div>
+            <div class="gallery-img">
+               <img src="Images/meal-6.jpg" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="contact">
+      <div class="container">
+         <div class="contact-title">
+            <span>Contact</span>
+            <h2>Need Help ? Contact Us</h2>
+         </div>
+         <div class="contact-map">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27653.563434705284!2d31.26165035!3d29.959438099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583809b8f551e3%3A0x6265c5febb8ab4a3!2sMaadi%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1728583810128!5m2!1sen!2seg"
+               height="450" style="border:0;" allowfullscreen="" loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         <div class="details">
+            <div class="details-item">
+               <div class="details-icon">
+                  <i class="fa-regular fa-map"></i>
+               </div>
+               <div class="details-text">
+                  <h4>Our Address</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+               </div>
+            </div>
+            <div class="details-item">
+               <div class="details-icon">
+                  <i class="fa-regular fa-map"></i>
+               </div>
+               <div class="details-text">
+                  <h4>Our Address</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+               </div>
+            </div>
+            <div class="details-item">
+               <div class="details-icon">
+                  <i class="fa-regular fa-map"></i>
+               </div>
+               <div class="details-text">
+                  <h4>Our Address</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+               </div>
+            </div>
+            <div class="details-item">
+               <div class="details-icon">
+                  <i class="fa-regular fa-map"></i>
+               </div>
+               <div class="details-text">
+                  <h4>Our Address</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+               </div>
+            </div>
+         </div>
+         <form>
+            <div class="input-group">
+               <input type="text" name="name" id="name" placeholder="Your Name">
+               <input type="text" name="email" id="email" placeholder="Your Email">
+            </div>
+            <input type="text" name="subject" id="subject" placeholder="Your Subject">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <button class="contact-btn">Send Message</button>
+         </form>
+      </div>
+   </div>
+
+</body>
+
+</html>
